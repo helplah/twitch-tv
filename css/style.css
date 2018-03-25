@@ -7,7 +7,7 @@ body {
 
 .container {
     background-color: #e1e1e6;
-    margin: 0 auto;
+    margin: 20px auto;
     padding: 0;
     max-width: 700px;
 }
@@ -125,39 +125,19 @@ footer {
     overflow: hidden;
     text-overflow: ellipsis;
     text-align: center;
-    vertical-align: middle;
-}
-
-
-@media (min-width: 768px) {
-    .container {
-        margin: 10px auto;
-    }
-
-    #header {
-        padding-left: 65px;
-    }
+    line-height: 50px;
 }
 
 .text-align {
   text-align: center;
 }
 
-/* vertically centralise search bar
-form {
-    padding: 22px 0;
-}
+@media (max-width: 768px) {
+  .container {
+    margin: 10px auto;
+  }
 
-.searchBar {
-    position: relative;
-    padding-left: 5px;
-    padding-top: 4px;
+  #header {
+    padding-left: 65px;
+  }
 }
-
-.submit {
-    position: absolute;
-    font-size: 17px;
-    color: ;
-    background-color: ;
-}
-*/
