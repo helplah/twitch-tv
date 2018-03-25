@@ -1,10 +1,12 @@
 const channels = ["ESL_SC2", "taimoutv", "xQcOW ", "dafran", "stpeach", "tf2pine"];
 
 function getChannelInfo() {
+    // apply method on all channels
     channels.forEach(channel => {
         function makeUrl(type, name) {
             return "https://wind-bow.glitch.me/twitch-api/" + type + "/" + name + "?callback=?";
         };
+        // check under streams route if the user is streaming, update user status
         $.getJSON(makeUrl("streams", channel), data => {
             let game, status;
             if (data.stream === null) {
@@ -17,6 +19,7 @@ function getChannelInfo() {
                 game = data.stream.game;
                 status = "online";
             };
+            // go channels route, and retrieve data
             $.getJSON(makeUrl("channels", channel), data => {
                 let logo = data.logo ? data.logo : "https://dummyimage.com/50x50/ecf0e7/5c5457.jpg&text=0x3F",
                 description = status === "online" ? ": " + data.status : "";
