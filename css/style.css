@@ -18,18 +18,17 @@ img {
     border: solid white;
 }
 
-h1 { /* Twitch Streamers */
+.header { /* Twitch Streamers */
     color: #e1e1e6;
     font-family: 'Oswald', sans-serif;
     font-weight: bold;
     text-transform: uppercase;
-    text-align: left;
-    margin: 15px 0;
+    text-align: center;
+    margin: 20px 0 20px 60px;
 }
 
 #header { /* brown header */
     background-color: #5C5457;
-    padding: 5px 65px 5px 15px;
 }
 
 .row {
@@ -97,13 +96,13 @@ h1 { /* Twitch Streamers */
 }
 
 .offline {
-  background-color: #4a5e82;
-  color: #8ea7c2;
+    background-color: #4a5e82;
+    color: #8ea7c2;
 }
 
 .online {
-  background-color: #b8cca6;
-  color: #5c5457;
+    background-color: #b8cca6;
+    color: #5c5457;
 }
 
 .online a, .online a:focus, .online a:hover, .online a:visited {
@@ -129,15 +128,24 @@ footer {
 }
 
 .text-align {
-  text-align: center;
+    text-align: center;
 }
 
-@media (max-width: 768px) {
-  .container {
-    margin: 10px auto;
-  }
+@media (max-width: 700px) {
+    .container {
+        margin: -3px auto;
+    }
+}
 
-  #header {
-    padding-left: 65px;
-  }
+@media (max-width: 500px) {
+    .header {
+        margin: 20px 0 20px 20px;
+    }
+}
+
+@media (max-width: 435px) {
+    .header {
+        margin: 20px 60px 20px 10px;
+        font-size: 30px;
+    }
 }

@@ -38,10 +38,10 @@ function getChannelInfo() {
 
 $(document).ready(() => {
     getChannelInfo();
-    $(".selector").click(() => {
+    $(".selector").click(event => {
         $(".selector").removeClass("active");
-        $(this).addClass("active");
-        var status = $(this).attr("id");
+        $(event.currentTarget.id).addClass("active");
+        var status = $(event.currentTarget).attr("id");
         if (status === "all") {
             $(".online, .offline").show();
         } else if (status === "online") {
@@ -51,5 +51,8 @@ $(document).ready(() => {
             $(".online").hide();
             $(".offline").show();
         }
+        console.log(document.getElementById("all"));
+        console.log(document.getElementById("online"));
+        console.log(document.getElementById("offline"));
     })
 });
