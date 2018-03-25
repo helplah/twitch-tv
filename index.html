@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Twitch TV</title>
+        <!--If I put link rel css at the top, there's some error-->
+        <script src="https://use.fontawesome.com/e879f2bf45.js"></script>
+        <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/css/bootstrap.min.css'>
+        <link rel="stylesheet" href="css/style.css">
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+    </head>
+    <body>
+        <main class="container">
+            <div class="row" id="header">
+                <h1>Twitch Streamers</h1>
+
+                <!--
+                <div class="col-md-4 col-sm-12">
+                    <form class="">
+                        <input type="search" class="searchBar" name="search" placeholder="Search username" autocomplete="off" size=17>
+                        <button type="submit" class="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                </div>
+                -->
+
+                <div class="menu">
+                    <div class="selector active" id="all">
+                        <div class="circle"></div><p>All</p>
+                    </div>
+                    <div class="selector" id="online">
+                        <div class="circle"></div><p>Online</p>
+                    </div>
+                    <div class="selector" id="offline">
+                        <div class="circle"></div><p>Offline</p>
+                    </div>
+                </div>
+            </div>
+            <div id="display"></div>
+            <footer></footer>
+        </main>
+        <script src="js/index.js"></script>
+    </body>
+</html>
