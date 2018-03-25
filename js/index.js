@@ -41,7 +41,7 @@ $(document).ready(() => {
     $(".selector").click(event => {
         $(".selector").removeClass("active");
         $(event.currentTarget.id).addClass("active");
-        var status = $(event.currentTarget).attr("id");
+        let status = $(event.currentTarget).attr("id");
         if (status === "all") {
             $(".online, .offline").show();
         } else if (status === "online") {
@@ -51,8 +51,5 @@ $(document).ready(() => {
             $(".online").hide();
             $(".offline").show();
         }
-        console.log(document.getElementById("all"));
-        console.log(document.getElementById("online"));
-        console.log(document.getElementById("offline"));
     })
 });
