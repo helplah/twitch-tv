@@ -1,2 +1,2 @@
 # twitch-tv
-This was made using HTML, CSS, JavaScript and Twitch API.
+This webpage was made using HTML, CSS, Bootstrap, JavaScript, jQuery and Twitch API.
