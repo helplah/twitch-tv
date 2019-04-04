@@ -1,4 +1,4 @@
-const channels = ["ESL_SC2", "taimoutv", "xQcOW ", "dafran", "stpeach", "tf2pine"];
+const channels = ["ESL_SC2", "OgamingSC2", "noobs2ninjas", "storbeck", "habathcx", "RobotCaleb"];
 
 function getChannelInfo() {
     // apply method on all channels
@@ -6,6 +6,7 @@ function getChannelInfo() {
         function makeUrl(type, name) {
             return "https://wind-bow.glitch.me/twitch-api/" + type + "/" + name + "?callback=?";
         };
+        console.log('https://wind-bow.glitch.me/twitch-api/streams/ESL_SC2?callback=?')
         // check under streams route if the user is streaming, update user status
         $.getJSON(makeUrl("streams", channel), data => {
             let game, status;
