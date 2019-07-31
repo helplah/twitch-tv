@@ -1,6 +1,8 @@
 # Twitch TV
 
-Link: https://www.jenlky.com/twitch-tv/
+Link: https://jenlky.github.io/twitch-tv/
+
+Blog: https://www.jenlky.com/projects/twitch-tv/
 
 This website tracks twitch streamers and shows what they're streaming if they're online. Allows user to filter based on status.
 
